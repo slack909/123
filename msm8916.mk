@@ -20,7 +20,9 @@ $(call inherit-product, device/qcom/common/common.mk)
 PRODUCT_NAME := msm8916
 PRODUCT_DEVICE := msm8916
 
-PRODUCT_BOOT_JARS += qcmediaplayer:oem-services:qcom.fmradio:org.codeaurora.Performance:tcmiface
+PRODUCT_BOOT_JARS += qcmediaplayer:oem-services:qcom.fmradio:org.codeaurora.Performance
+PRODUCT_BOOT_JARS += tcmiface
+PRODUCT_BOOT_JARS += com.qti.dpmframework
 
 # Audio configuration file
 PRODUCT_COPY_FILES += \
