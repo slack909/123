@@ -22,7 +22,11 @@ PRODUCT_DEVICE := msm8916
 
 PRODUCT_BOOT_JARS += qcmediaplayer:oem-services:qcom.fmradio:org.codeaurora.Performance
 PRODUCT_BOOT_JARS += tcmiface
+
+ifneq ($(strip $(QCPATH)),)
 PRODUCT_BOOT_JARS += com.qti.dpmframework
+PRODUCT_BOOT_JARS += dpmapi
+endif
 
 # Audio configuration file
 PRODUCT_COPY_FILES += \
